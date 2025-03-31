@@ -11,7 +11,7 @@ import {
 } from '../../utils/burger-api';
 import { deleteCookie, getCookie, setCookie } from '../../utils/cookie';
 
-interface IUState {
+export interface IUState {
   user: TUser | null;
   isAuthorized: boolean;
   error: string | undefined;
@@ -129,3 +129,5 @@ export const authSlice = createSlice({
 export const { setAuthorization, setUser } = authSlice.actions;
 export const { UserSelector, isAuthorizedSelector, UsernameSelector } =
   authSlice.selectors;
+
+export default authSlice.reducer;

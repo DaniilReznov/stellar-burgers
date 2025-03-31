@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YTc4NDA4MTMzYWNkMDAxYmU0ZjZlMCIsImlhdCI6MTc0MzE1NjA1MiwiZXhwIjoxNzQzMTU3MjUyfQ.xXntGMc-wOA8JpY-6cUFmPhW6xUfRtj6Xzki9mMuPD8",
+  "refreshToken": "1132c92480d9df31b84dc8ebe3f058d3d5828fffd0d158297f3c608cf2f76a8f99672aeeb5389a05",
+  "user": {
+    "email": "daniilsuhanov1304@mail.ru",
+    "name": "Хитрый сов"
+  }
+}

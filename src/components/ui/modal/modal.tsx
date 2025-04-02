@@ -15,12 +15,16 @@ export const setNum = (num: number) => {
 export const ModalUI: FC<TModalUIProps> = memo(
   ({ title, onClose, children }) => (
     <>
-      <div className={styles.modal}>
+      <div className={styles.modal} data-cy='Modal'>
         <div className={styles.header}>
           <h3 className={`${styles.title} text text_type_main-large orderNum`}>
             {title}
           </h3>
-          <button className={styles.button} type='button'>
+          <button
+            className={styles.button}
+            type='button'
+            data-cy='CloseModalButton'
+          >
             <CloseIcon type='primary' onClick={onClose} />
           </button>
         </div>

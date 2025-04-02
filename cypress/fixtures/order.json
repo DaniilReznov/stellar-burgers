@@ -1,0 +1,77 @@
+{
+  "success": true,
+  "name": "Фалленианский флюоресцентный spicy люминесцентный бургер",
+  "order": {
+    "ingredients": [
+      {
+        "_id": "643d69a5c3f7b9001cfa093e",
+        "name": "Филе Люминесцентного тетраодонтимформа",
+        "type": "main",
+        "proteins": 44,
+        "fat": 26,
+        "carbohydrates": 85,
+        "calories": 643,
+        "price": 988,
+        "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+        "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+        "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+        "__v": 0
+      },
+      {
+        "_id": "643d69a5c3f7b9001cfa0947",
+        "name": "Плоды Фалленианского дерева",
+        "type": "main",
+        "proteins": 20,
+        "fat": 5,
+        "carbohydrates": 55,
+        "calories": 77,
+        "price": 874,
+        "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+        "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+        "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+        "__v": 0
+      },
+      {
+        "_id": "643d69a5c3f7b9001cfa0942",
+        "name": "Соус Spicy-X",
+        "type": "sauce",
+        "proteins": 30,
+        "fat": 20,
+        "carbohydrates": 40,
+        "calories": 30,
+        "price": 90,
+        "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+        "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+        "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+        "__v": 0
+      },
+      {
+        "_id": "643d69a5c3f7b9001cfa093d",
+        "name": "Флюоресцентная булка R2-D3",
+        "type": "bun",
+        "proteins": 44,
+        "fat": 26,
+        "carbohydrates": 85,
+        "calories": 643,
+        "price": 988,
+        "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+        "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+        "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+        "__v": 0
+      }
+    ],
+    "_id": "67e65236ea327c001cf306f7",
+    "owner": {
+      "name": "Хитрый сов",
+      "email": "daniilsuhanov1304@mail.ru",
+      "createdAt": "2025-02-08T16:19:20.961Z",
+      "updatedAt": "2025-02-10T07:26:19.180Z"
+    },
+    "status": "done",
+    "name": "Фалленианский флюоресцентный spicy люминесцентный бургер",
+    "createdAt": "2025-03-28T07:39:34.822Z",
+    "updatedAt": "2025-03-28T07:39:36.078Z",
+    "number": 72443,
+    "price": 2940
+  }
+}

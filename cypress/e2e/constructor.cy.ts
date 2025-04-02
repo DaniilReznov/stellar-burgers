@@ -25,6 +25,8 @@ describe('Сборка бургера', () => {
     cy.get('[data-cy=IngredientsInConstructor]').as('ingredientAddBtn');
     cy.get('[data-cy=ConstructorItemsIngredients]').as('constructorItems');
     cy.get('[data-cy=ConstructorItemsSauces]').as('sauceAddBtn');
+    cy.get('[data-cy=TopBunInConstructorEmpty]').as('topBunEmpty');
+    cy.get('[data-cy=BottomBunInConstructorEmpty]').as('BottomBunEmpty');
   };
 
   beforeEach(() => {
@@ -49,6 +51,9 @@ describe('Сборка бургера', () => {
 
   describe('Добавление ингредиентов в бургер', () => {
     it('Добавление булки в бургер', () => {
+      cy.get('@topBunEmpty').should('contain', 'Выберите булки');
+      cy.get('@BottomBunEmpty').should('contain', 'Выберите булки');
+
       cy.get('@bunAddBtn').contains('Добавить').click();
       cy.get('[data-cy=TopBunInConstructor]').as('topBun');
       cy.get('@topBun').should('contain', 'Краторная булка N-200i');
@@ -59,6 +64,7 @@ describe('Сборка бургера', () => {
     });
 
     it('Добавление начинки в бургер', () => {
+      cy.get('@constructorItems').should('contain', 'Выберите начинку');
       cy.get('@ingredientAddBtn').contains('Добавить').click();
       cy.get('@constructorItems').should(
         'contain',
@@ -67,6 +73,7 @@ describe('Сборка бургера', () => {
     });
 
     it('Добавление соуса в бургер', () => {
+      cy.get('@constructorItems').should('contain', 'Выберите начинку');
       cy.get('@sauceAddBtn').contains('Добавить').click();
       cy.get('@constructorItems').should('contain', 'Соус Spicy-X');
     });
@@ -100,6 +107,8 @@ describe('Сборка бургера', () => {
       cy.get('@modal').should('be.visible');
       cy.get('@modal').find('button').click().should('not.exist');
 
+      cy.get('@topBunEmpty').should('contain', 'Выберите булки');
+      cy.get('@BottomBunEmpty').should('contain', 'Выберите булки');
       cy.get('@constructorItems').should('contain', 'Выберите начинку');
     });
   });
